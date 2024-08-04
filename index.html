@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferretería</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="fondo">
+        <div class="container">
+        
+        <div class="logo">
+         <h1>Bienvenido a la Ferretería</h1>
+            
+        <img src="imagen/ferreteria.jpg" alt="logo">
+        
+       </div>
+        <div class="product-lista" id="products">
+            <div class="product" data-id="1" data-name="Martillo" data-price="7000">
+                <img src="imagen/imagen-martillo.jpg" alt="Martillo">
+                <div>
+                    <strong>Martillo</strong> - $7000 
+                </div>
+                <button onclick="addToCart(1)">Agregar al carrito</button>
+            </div>
+            <div class="product" data-id="2" data-name="Destornillador" data-price="4200">
+                <img src="imagen/imagen-destornillador.webp" alt="Destornillador">
+                <div>
+                    <strong>Destornillador</strong> - $4200
+                </div>
+                <button onclick="addToCart(2)">Agregar al carrito</button>
+            </div>
+            <div class="product" data-id="3" data-name="Clavos" data-price="4500">
+                <img src="imagen/imagen-clavo.jpg" alt="Clavos">
+                <div>
+                    <strong>Clavos</strong> - $4500
+                </div>
+                <button onclick="addToCart(3)">Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="cart">
+            <h2>Carrito de Compras</h2>
+            <ul id="cartItems"></ul>
+            <p id="total">Total: $0.00</p>
+            <button onclick="clearCart()">Vaciar Carrito</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
